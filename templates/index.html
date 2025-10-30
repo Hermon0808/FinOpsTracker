@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinOpsTracker: Automated Expense Management with DevOps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            color: #cbd5e1;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95)),
+                url('https://images.unsplash.com/photo-1649972904343-8d967e1cc94b?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .tool-logo {
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: grayscale(100%) opacity(0.6);
+        }
+        .tool-logo:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%) opacity(1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white">
+        <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                <span class="text-gradient">FinOpsTracker</span> – Simplify, Automate, Save.
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+                A cloud-deployed, DevOps-powered Expense Tracker that automates expense management, integrates CI/CD pipelines, and showcases modern cloud deployment workflows.
+            </p>
+            <a href="#features" class="mt-8 inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition-transform transform hover:scale-105">
+                Explore the Features
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24 space-y-24">
+
+        <!-- Project Overview -->
+        <section id="overview">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-4">About the Project</h2>
+                    <p class="mb-4">
+                        <strong>FinOpsTracker</strong> is a full-fledged DevOps project that automates the deployment of an Expense Tracker application. It integrates tools like Docker, Terraform, Kubernetes, Ansible, and GitHub Actions for CI/CD.
+                    </p>
+                    <p>The app helps users track their daily expenses, categorize spending, and gain insights through simple visualizations—all hosted on the cloud and deployed using Infrastructure as Code.</p>
+                </div>
+                <div class="text-center glass-card p-6 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3h2a1 1 0 102 0h2c0-1.657-1.343-3-3-3zM3 13h18v6H3v-6z" />
+                    </svg>
+                    <p class="mt-4 text-slate-300">Deployed with Automation on Azure Kubernetes Service using Terraform & GitHub Actions</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features">
+            <h2 class="section-title text-white">App Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-6 rounded-lg text-center hover:border-indigo-500 border transition">
+                    <h3 class="font-bold text-xl text-indigo-400 mb-2">💸 Expense Tracking</h3>
+                    <p>Log, edit, and categorize your daily expenses with ease.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg text-center hover:border-indigo-500 border transition">
+                    <h3 class="font-bold text-xl text-indigo-400 mb-2">📊 Data Visualization</h3>
+                    <p>View monthly spending breakdowns via charts and analytics.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg text-center hover:border-indigo-500 border transition">
+                    <h3 class="font-bold text-xl text-indigo-400 mb-2">☁️ Cloud Deployment</h3>
+                    <p>Automated CI/CD pipelines deploy the app to Azure via GitHub Actions.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg text-center hover:border-indigo-500 border transition">
+                    <h3 class="font-bold text-xl text-indigo-400 mb-2">🐳 Dockerized App</h3>
+                    <p>Lightweight, portable containerization ensures consistency across environments.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg text-center hover:border-indigo-500 border transition">
+                    <h3 class="font-bold text-xl text-indigo-400 mb-2">⚙️ IaC with Terraform</h3>
+                    <p>Provisioning of AKS and cloud resources using Infrastructure as Code.</p>
+                </div>
+                <div class="glass-card p-6 rounded-lg text-center hover:border-indigo-500 border transition">
+                    <h3 class="font-bold text-xl text-indigo-400 mb-2">🤖 Ansible Automation</h3>
+                    <p>Automated deployment and configuration management via playbooks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section>
+            <h2 class="section-title text-white">Tools & Technologies Used</h2>
+            <div class="max-w-4xl mx-auto p-8 glass-card rounded-lg">
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-items-center">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" class="h-16 w-16 tool-logo" title="Git">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" class="h-16 w-16 tool-logo" title="GitHub Actions">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" class="h-16 w-16 tool-logo" title="Docker">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" class="h-16 w-16 tool-logo" title="Terraform">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" class="h-16 w-16 tool-logo" title="Ansible">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" class="h-16 w-16 tool-logo" title="Kubernetes">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" class="h-16 w-16 tool-logo" title="Python Backend">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" class="h-16 w-16 tool-logo" title="JavaScript Frontend">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" class="h-16 w-16 tool-logo" title="Azure Cloud">
+                </div>
+            </div>
+        </section>
+
+        <!-- About This Project -->
+        <section>
+             <div class="text-center p-12 glass-card rounded-lg">
+                 <h2 class="section-title text-white mt-0">About FinOpsTracker</h2>
+                 <p class="max-w-2xl mx-auto -mt-6 mb-8">
+                    FinOpsTracker is a demonstration of DevOps principles — showcasing automation, scalability, and continuous deployment in the cloud.
+                 </p>
+                 <div class="flex justify-center items-center gap-4 text-white font-semibold">
+                     <span>Docker</span><span class="text-slate-500">&bull;</span>
+                     <span>Terraform</span><span class="text-slate-500">&bull;</span>
+                     <span>GitHub Actions</span><span class="text-slate-500">&bull;</span>
+                     <span>Kubernetes</span>
+                 </div>
+                 <a href="https://github.com/Hermon0808/Devops" target="_blank" class="mt-8 inline-block bg-transparent border-2 border-indigo-500 text-indigo-400 font-semibold px-8 py-3 rounded-lg hover:bg-indigo-500 hover:text-white transition">
+                     View Project on GitHub
+                 </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-slate-500">
+        <p>&copy; 2025 FinOpsTracker by Hermon. Built with DevOps ❤️.</p>
+    </footer>
+
+</body>
+</html>
